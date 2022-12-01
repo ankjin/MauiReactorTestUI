@@ -38,6 +38,22 @@
     <MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
   <ItemGroup>
+    <MauiImage Remove="Resources\Images\glasses.png" />
+    <MauiImage Remove="Resources\Images\nike.png" />
+    <MauiImage Remove="Resources\Images\niken.png" />
+    <MauiImage Remove="Resources\Images\telegram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resources\Images\glasses.png" />
+    <None Remove="Resources\Images\telegram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\glasses.png" />
+    <EmbeddedResource Include="Resources\Images\nike.png" />
+    <EmbeddedResource Include="Resources\Images\niken.png" />
+    <EmbeddedResource Include="Resources\Images\telegram.png" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Reactor.Maui" Version="1.0.74-beta" />
     <PackageReference Include="Reactor.Maui.Canvas" Version="1.0.74-beta" />
   </ItemGroup>
