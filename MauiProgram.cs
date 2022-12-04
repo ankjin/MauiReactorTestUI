@@ -1,6 +1,6 @@
 ﻿using MauiReactor;
 using MauiReactorTestUI.Pages;
-
+using SkiaSharp.Views.Maui.Controls.Hosting;
 
 namespace MauiReactorTestUI;
 
@@ -10,13 +10,14 @@ public static class MauiProgram
     {
         var builder = MauiApp.CreateBuilder();
         builder
-            .UseMauiReactorApp<InvoiceUiPage>(app =>
+            .UseMauiReactorApp<LottieAnimationPage>(app =>
             {
                 app.AddResource("Resources/Styles/Colors.xaml");
                 app.AddResource("Resources/Styles/Styles.xaml");
 
                 app.SetWindowsSpecificAssectDirectory("Assets");
             })
+            .UseSkiaSharp()
 #if DEBUG
             .EnableMauiReactorHotReload()
 #endif
