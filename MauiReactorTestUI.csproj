@@ -46,6 +46,7 @@
   <ItemGroup>
     <None Remove="Resources\Images\glasses.png" />
     <None Remove="Resources\Images\telegram.png" />
+    <None Remove="Resources\Raw\dotnetbot.json" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Images\glasses.png" />

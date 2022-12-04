@@ -20,7 +20,7 @@ class LottieAnimationPage : Component
             {
                 new VerticalStackLayout
                 {
-                    new SKLottieView().Source("dotnetbot.json")
+                    new SKLottieView("dotnetbot.json")
                         .RepeatCount(1)
                         .HeightRequest(20)
                         .WidthRequest(20)
